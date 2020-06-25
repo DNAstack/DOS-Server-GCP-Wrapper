@@ -90,7 +90,7 @@ public class GcsObjectLister implements ObjectLister{
                                                                               .type(DrsAccessMethod.AccessType.https)
                                                                               .region(region)
                                                                               .access_url(DrsAccessUrl.builder()
-                                                                                                      .url(blob.getSelfLink() + "?object")
+                                                                                                      .url(blob.getSelfLink() + "?alt=media")
                                                                                                       .build())
                                                                               .build(),
                                                                DrsAccessMethod.builder()
